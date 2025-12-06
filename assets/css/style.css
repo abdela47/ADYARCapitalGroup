@@ -1,1 +1,152 @@
+:root {
+  /* Placeholder colors – we’ll swap these to your exact hex codes later */
+  --bg-main: #050814;      /* background */
+  --accent: #d4d4c8;       /* close to your logo’s off-white */
+  --text-main: #f9fafb;
+  --text-muted: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Base layout */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px 60px 20px;
+}
+
+/* Header with small horizontal logo */
+
+header {
+  width: 100%;
+  max-width: 1400px;
+  padding: 26px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 150px; /* adjust if you want larger/smaller */
+  height: auto;
+  opacity: 0.9;
+}
+
+/* Hero area */
+
+.hero-logo {
+  width: 100%;
+  max-width: 380px;
+  margin: 40px auto 25px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Coming Soon section */
+
+.coming-section {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  max-width: 560px;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* Info card */
+
+.info-card {
+  margin-top: 40px;
+  max-width: 680px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 30px 24px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.info-contact {
+  margin-top: 20px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.info-contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.info-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 600px) {
+  header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .hero-logo {
+    margin-top: 30px;
+  }
+
+  .info-card {
+    padding: 24px 18px;
+  }
+}
 
