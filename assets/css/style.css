@@ -1,9 +1,9 @@
 :root {
   /* Placeholder colors – we’ll swap these to your exact hex codes later */
-  --bg-main: #050814;      /* background */
-  --accent: #d4d4c8;       /* close to your logo’s off-white */
-  --text-main: #f9fafb;
-  --text-muted: #9ca3af;
+  --bg-main: #111a12;      /* background ADYAR Dark */
+  --accent: #848a71;       /* ADYAR Bright */
+  --text-main: #4d2809;    /* ADYAR Warm */
+  --text-muted: #d9d8ce;    /* ADYAR Mute */
 }
 
 * {
